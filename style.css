@@ -1,0 +1,22 @@
+:root {
+    --accent-color: #C2A84D;
+}   
+
+body {
+    color: #222;
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+}
+.accent-txt {
+    color: var(--accent-color);
+}
+.text-section-padded {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+a, a:hover, a:active, a:focus {
+    outline: 0 !important;
+ }
