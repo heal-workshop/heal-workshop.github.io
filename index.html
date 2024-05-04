@@ -5,6 +5,24 @@
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 <link rel="stylesheet" href="./style.css">
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const readMoreBtn = document.querySelector('.read-more');
+    const readLessBtn = document.querySelector('.read-less');
+    const bioHidden = document.querySelector('.bio-hidden');
+
+    readMoreBtn.addEventListener('click', function() {
+        bioHidden.style.display = 'block';
+        readMoreBtn.style.display = 'none';
+    });
+
+    readLessBtn.addEventListener('click', function() {
+        bioHidden.style.display = 'none';
+        readMoreBtn.style.display = 'inline';
+    });
+});
+</script>
+
 <body class="sans-serif">
     <header class="sans-serif">
         <div class="cover bg-left bg-center-l accent-bg" style="background-image: url('assets/banner.svg');">
@@ -49,38 +67,112 @@
             </div>
         </article>
 
-        <article class="cf ph3 ph5-ns pv5" id="cfp">
+        <article class="cf ph3 ph5-ns pv5" id="keynote">
             <header class="fn fl-ns w-30-ns pr4-ns">
                 <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
-                    Call for Participation
+                    Keynote Speakers
                 </h1>
             </header>
-            <div class="fn fl-ns w-60-ns">
-                <p class="f5 lh-copy mt0-ns">
-                    We welcome participants who work on topics related to <b>supporting human-centered evaluation and auditing of language models</b>. Interested participants will be asked to contribute a short paper to the workshop. Topics of interest include, but not limited to:
+            <div class="fn fl-ns w-70-ns">
+                <div class="speaker-container">
+                    <div class="speaker-photo">
+                        <div class="aspect-ratio aspect-ratio--1x1">
+                            <img src="/assets/wei.png" class="db bg-center cover aspect-ratio--object br-100" alt="Afternoon Keynote Speaker">
+                        </div>
+                    </div>
 
-                    <ul>
-                        <li class="pv1">Empirical understanding of stakeholders' needs and goals of LLM evaluation and auditing</li>
-                        <li class="pv1">Human-centered evaluation and auditing methods for LLMs</li>
-                        <li class="pv1">Tools, processes, and guidelines for LLM evaluation and auditing</li>
-                        <li class="pv1">Discussion of regulatory measures and public policies for LLM auditing</li>
-                        <li class="pv1">Ethics in LLM evaluation and auditing</li>
-                    </ul>
-                </p>
+                    <div class="speaker-info">
+                        <h2>Dr. Xu Wei</h2>
+                        <h3>Human-AI Collaboration in Evaluating Large Language Models</h3>
+                        <p>To support real-world applications more responsibly and further improve large language models (LLMs), it is essential to design reliable and reusable frameworks for their evaluation. In this talk, I will discuss three forms of human-AI collaboration for evaluation that combine the strengths of both: (1) the reliability and user-centric aspect of human evaluation, and (2) the cost efficiency and reproducibility offered by automatic evaluation. The first part focuses on systematically assessing LLMs’ favoritism towards Western culture, using a hybrid approach of manual effort and automated analysis. The second part will showcase an LLM-powered privacy preservation tool, designed to safeguard users against the disclosure of personal information. I will share some interesting findings from an HCI user study that involves real Reddit users utilizing our tool, which in turn informs our ongoing efforts to improve the design of NLP models. Lastly, we will delve into the evaluation of LLM-generated texts, where human judgments can be used to train automatic evaluation metrics to detect errors. We also highlight the opportunity of engaging both laypeople and experts in evaluating LLM-generated simplified medical texts in high-stake healthcare applications. </p>
+                        <h3>Bio</h3>
+                        <p>
+                            Wei Xu is an Associate Professor in the College of Computing and Machine Learning Center at the Georgia Institute of Technology, where she is the director of the NLP X Lab. Her research interests are in natural language processing and machine learning, with a focus on Generative AI, robustness and fairness of large language models, multilingual LLMs, as well as AI for science, education, accessibility, and privacy research. She is a recipient of the NSF CAREER Award, CrowdFlower AI for Everyone Award, Best Paper Award and Honorable Mention at COLING'18, ACL'23. She also received research funds from DARPA and IARPA. She is currently an executive board member of NAACL. 
+                        </p>
+                    </div>
+                </div>
+                <div class="speaker-container">
+                    <div class="speaker-photo">
+                        <div class="aspect-ratio aspect-ratio--1x1">
+                            <img src="/assets/sherry.png" class="db bg-center cover aspect-ratio--object br-100" alt="Afternoon Keynote Speaker">
+                        </div>
+                    </div>
+
+                    <div class="speaker-info">
+                        <h2>Dr. Sherry Tongshuang Wu</h2>
+                        <h3>Practical AI Systems: From General-Purpose AI to (the Right) Specific Use Cases</h3>
+                        <p>AI research has made great strides in developing general-purpose models (e.g., LLMs) that can excel across a wide range of tasks, enabling users to explore AI applications tailored to their unique needs without the complexities of custom model training. However, with the opportunities come the challenges — General-purpose models prioritize overall performance, but this can neglect specific user needs. How can we make these models practically usable?  In this talk, I will present our recent work on assessing and tailoring general-purpose models for specific use cases. I will first cover methods for evaluating and mapping LLMs to specific usage scenarios, then reflect on the importance of identifying the right tasks for LLMs by comparing how humans and LLMs may perform the same tasks differently. In my final remarks, I will discuss the potential of training humans and LLMs with complementary skill sets. </p>
+                        <h3>Bio</h3>
+                        <p>
+                            Sherry Tongshuang Wu is an Assistant Professor in the Human-Computer Interaction Institute at Carnegie Mellon University. Her research lies at the intersection of Human-Computer Interaction and Natural Language Processing, and primarily focuses on how humans (AI experts, lay users, domain experts) can practically interact with (debug, audit, and collaborate with) AI systems. To this end, she has worked on assessing NLP model capabilities, supporting human-in-the-loop NLP model debugging and correction, as well as facilitating human-AI collaboration. She has authored award-winning papers in top-tier NLP, HCI and Visualization conferences and journals such as ACL, CHI, TOCHI, TVCG, etc. Before joining CMU, Sherry received her Ph.D. degree from the University of Washington and her bachelor degree from the Hong Kong University of Science and Technology, and has interned at Microsoft Research, Google Research, and Apple. You can find out <a href="http://cs.cmu.edu/~sherryw">more</a> about her.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="agenda">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Agenda (Tentative)
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
                 <p class="f5 lh-copy mt0-ns">
-                    <p class="pv1"><a style="font-weight: 700;">Submission Format:</a> 2 - 6 pages ACM double-column, excluding references.</p>
-                    <p class="pv1"><a style="font-weight: 700;">Submission Types:</a> Position papers, full or in-progress empirical studies, literature reviews, system demos, method descriptions, or encore of published work. The submission will be non-archival. </p>
-                    <p class="pv1"><a style="font-weight: 700;">Review Process:</a> Double-blind. Papers will be selected based on the quality of the submission and diversity of perspectives to allow for a meaningful exchange of knowledge between a broad range of stakeholders. </p>
-                    <p><a style="font-weight: 700;">Templates: </a> <a class="accent-txt" href="https://www.acm.org/binaries/content/assets/publications/word_style/interim-template-style/interim-layout.docx">[Word]</a> <a class="accent-txt" href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip">[LaTex]</a> <a class="accent-txt" href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc">[Overleaf]</a></p>
-                    <p><a style="font-weight: 700;">Notes: </a>                    <ul>
-                        <li class="pv1">We encourage authors who submit also to help with the review process.</li>
-                        <li class="pv1">For an encore submission, you do not need to anonymize the submission. Encore submissions will go through a jury review process. </li>
-                        <li class="pv1">If you are using LaTex, please use \documentclass[manuscript,review,anonymous]{acmart} for submission. </li>
-                        <li class="pv1">For camera ready, please use \documentclass[sigconf]{acmart}.</li>
-                    </ul></p>
+                    The primary goal of this one-day workshop is to bring together HCI and AI researchers from academia, industry, and non-profits to share their ongoing efforts around evaluating and auditing language models.
                 </p>
-                <p>
-                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt" href="https://openreview.net/group?id=ACM.org/CHI/2024/Workshop/HEAL" target="_blank">→ Submission Site</a>
+                <ul class="agenda-list">
+                    <li>
+                        <h3>Welcome</h3>
+                        <p>Time: 9:00 AM - 9:15 AM</p>
+                    </li>
+                    <li>
+                        <h3>Keynote I</h3>
+                        <p>Time: 9:15 AM - 10:15 AM</p>
+                        <p>Speaker: Dr. Wei Xu</p>
+                    </li>
+                    <li>
+                        <h3>Coffee Break (Poster)</h3>
+                        <p>Time: 10:15 AM - 10:30 AM</p>
+                    </li>
+                    <li>
+                        <h3>Highlight Paper Presentation</h3>
+                        <p>Time: 10:30 AM - 11:30 PM</p>
+                    </li>
+                    <li>
+                        <h3>Group Activity I - Challenges Identification</h3>
+                        <p>Time: 11:30 AM - 12:30 PM</p>
+                    </li>
+                    <li>
+                        <h3>Lunch Break</h3>
+                        <p>Time: 12:30 PM - 2:00 PM</p>
+                    </li>
+                    <li>
+                        <h3>Keynote II</h3>
+                        <p>Time: 2:00 PM - 3:00 PM</p>
+                        <p>Speaker: Dr. Sherry Tongshuang Wu</p>
+                    </li>
+                    <li>
+                        <h3>Poster Session</h3>
+                        <p>Time: 3:00 PM - 4:00 PM</p>
+                    </li>
+                    <li>
+                        <h3>Coffee Break</h3>
+                        <p>Time: 4:00 PM - 4:15 PM</p>
+                    </li>
+                    <li>
+                        <h3>Group Activity II - Framework, Method, and Tooling</h3>
+                        <p>Time: 4:15 PM - 5:15 PM</p>
+                    </li>
+                    <li>
+                        <h3>Closing Remark</h3>
+                        <p>Time: 5:15 PM - 5:30 PM</p>
+                    </li>
+                </ul>
+                <p class="f5 lh-copy mt0-ns">
+                    All times displayed in the program are in local Honolulu, Hawaii time (GMT-10)
                 </p>
             </div>
         </article>
@@ -152,17 +244,38 @@
             </div>
         </article>
 
-        <article class="cf ph3 ph5-ns pv5" id="agenda">
+        <article class="cf ph3 ph5-ns pv5" id="cfp">
             <header class="fn fl-ns w-30-ns pr4-ns">
                 <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
-                    Agenda
+                    Call for Participation
                 </h1>
             </header>
-            <div class="fn fl-ns w-70-ns">
+            <div class="fn fl-ns w-60-ns">
                 <p class="f5 lh-copy mt0-ns">
-                    The primary goal of this one-day workshop is to bring together HCI and AI researchers from academia, industry, and non-profits to share their ongoing efforts around evaluting and auditing language models.
+                    We welcome participants who work on topics related to <b>supporting human-centered evaluation and auditing of language models</b>. Interested participants will be asked to contribute a short paper to the workshop. Topics of interest include, but not limited to:
+
                     <ul>
+                        <li class="pv1">Empirical understanding of stakeholders' needs and goals of LLM evaluation and auditing</li>
+                        <li class="pv1">Human-centered evaluation and auditing methods for LLMs</li>
+                        <li class="pv1">Tools, processes, and guidelines for LLM evaluation and auditing</li>
+                        <li class="pv1">Discussion of regulatory measures and public policies for LLM auditing</li>
+                        <li class="pv1">Ethics in LLM evaluation and auditing</li>
                     </ul>
+                </p>
+                <p class="f5 lh-copy mt0-ns">
+                    <p class="pv1"><a style="font-weight: 700;">Submission Format:</a> 2 - 6 pages ACM double-column, excluding references.</p>
+                    <p class="pv1"><a style="font-weight: 700;">Submission Types:</a> Position papers, full or in-progress empirical studies, literature reviews, system demos, method descriptions, or encore of published work. The submission will be non-archival. </p>
+                    <p class="pv1"><a style="font-weight: 700;">Review Process:</a> Double-blind. Papers will be selected based on the quality of the submission and diversity of perspectives to allow for a meaningful exchange of knowledge between a broad range of stakeholders. </p>
+                    <p><a style="font-weight: 700;">Templates: </a> <a class="accent-txt" href="https://www.acm.org/binaries/content/assets/publications/word_style/interim-template-style/interim-layout.docx">[Word]</a> <a class="accent-txt" href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip">[LaTex]</a> <a class="accent-txt" href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc">[Overleaf]</a></p>
+                    <p><a style="font-weight: 700;">Notes: </a>                    <ul>
+                        <li class="pv1">We encourage authors who submit also to help with the review process.</li>
+                        <li class="pv1">For an encore submission, you do not need to anonymize the submission. Encore submissions will go through a jury review process. </li>
+                        <li class="pv1">If you are using LaTex, please use \documentclass[manuscript,review,anonymous]{acmart} for submission. </li>
+                        <li class="pv1">For camera ready, please use \documentclass[sigconf]{acmart}.</li>
+                    </ul></p>
+                </p>
+                <p>
+                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt" href="https://openreview.net/group?id=ACM.org/CHI/2024/Workshop/HEAL" target="_blank">→ Submission Site</a>
                 </p>
             </div>
         </article>
