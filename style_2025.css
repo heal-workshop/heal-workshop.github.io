@@ -1,5 +1,5 @@
 :root {
-    --accent-color: #DF5033;
+    --accent-color: #254b8e;
 }   
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 .accent-bg {
-    background-color: #8f2814;
+    background-color: var(--accent-color);
 }
 .accent-txt {
     color: var(--accent-color);
