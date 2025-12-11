@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HEAL@CHI'26</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const readMoreBtn = document.querySelector('.read-more');
+    const readLessBtn = document.querySelector('.read-less');
+    const bioHidden = document.querySelector('.bio-hidden');
+
+    readMoreBtn.addEventListener('click', function() {
+        bioHidden.style.display = 'block';
+        readMoreBtn.style.display = 'none';
+    });
+
+    readLessBtn.addEventListener('click', function() {
+        bioHidden.style.display = 'none';
+        readMoreBtn.style.display = 'inline';
+    });
+});
+</script>
+</head>
+
+<body class="sans-serif">
+    <header class="sans-serif">
+        <div class="cover bg-left bg-center-l accent-bg" style="background-image: url('assets/chi2026-banner-full.png');">
+            <div class="pb4 pb4-m pb4-l">
+                <nav class="dt w-100 mw8 center">
+                    <div class="dtc w6 v-mid pa1">
+                        <a href="" class="f4 fw5 dib no-underline grow white pa2 grow">
+                            HEAL@CHI'26
+                        </a>
+                    </div>
+                    <div class="dtc v-mid tr pa3">
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="#cfp">Call for
+                            Participation</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="#info">Key Information</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="index.html">Latest Version</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="chi2025.html">CHI 2025</a>
+                        <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="chi2024.html">CHI 2024</a>
+                    </div>
+                </nav>
+                <div class="tc-l mt4 mt5-m mt6-l ph5 w-75 center">
+                    <h1 class="f2 f1-l fw6 white-90 mb0 lh-title"><b>HEAL @ CHI 2026</b><br><b>H</b>uman-centered <b>E</b>valuation and<br><b>A</b>uditing of <b>L</b>anguage Models</h1>
+                    <h2 class="fw3 f3 white-80 mt3 mb4">Barcelona | April 13-17, 2026</h2>
+                    <h3 class="fw3 f3 white-90 mt3 mb4 white accent-bg">Submission Deadline: <strong>February 13, 2026 (AOE)</strong></h3>
+                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt bg-white" href="" target="_blank">→ <b>Submission Site (Coming Soon)</b></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="text-section-padded">
+        <article class="cf ph3 ph5-ns pv5" id="overview">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Overview
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
+                <p class="f5 lh-copy mt0-ns">
+                <b>HEAL is back for its third iteration at CHI 2026!</b> This workshop addresses the ongoing "evaluation crisis" in LLM research and practice by bringing together HCI and AI researchers to rethink LLM evaluation and auditing from a human-centered perspective.
+                </p>
+                <p class="f5 lh-copy">
+                Building on successful workshops at CHI 2024 and CHI 2025, we continue exploring topics around understanding stakeholders' needs and goals, establishing human-centered evaluation and auditing methods, developing tools and resources, and fostering community collaboration.
+                </p>
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="theme">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Special Theme
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
+                <p class="f5 lh-copy mt0-ns">
+                <b>AI Agents-in-the-Loop:</b> As practitioners increasingly turn to AI agents as evaluation partners, we must critically examine how to maintain human-centered approaches while leveraging agent capabilities for scale and efficiency. This year's theme explores the emerging frontier where human judgment meets agent automation—addressing fundamental questions about task allocation, meta-evaluation of evaluator agents, and the design of safeguards that preserve human agency while benefiting from automation.
+                </p>
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="info">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Key Information
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
+                <p><b>Submission deadline</b>: <b>February 13, 2026 (AoE)</b></p>
+                <p><b>Notification of acceptance</b>: <b>March 13, 2026 (AoE)</b></p>
+                <p><b>Workshop date</b>: April 13-17, 2026</p>
+                <p><b>Workshop location</b>: Barcelona, Spain (In-person)</a></p>
+                <p><b>Contact</b>: heal.workshop@gmail.com</a></p>
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="cfp">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Call for Participation
+                </h1>
+            </header>
+            <div class="fn fl-ns w-60-ns">
+                <p class="f5 lh-copy mt0-ns">
+                    We welcome participants working on human-centered evaluation and auditing of language models. Topics of interest include, but are not limited to:
+
+                    <ul>
+                        <li class="pv1">Empirical understanding of stakeholders' needs and goals in LLM evaluation and auditing</li>
+                        <li class="pv1">Human-centered evaluation and auditing methods for LLMs</li>
+                        <li class="pv1">Tools, processes, and guidelines for LLM evaluation and auditing</li>
+                        <li class="pv1">Discussion of regulatory measures and public policies for LLM auditing</li>
+                        <li class="pv1">Ethics in LLM evaluation and auditing</li>
+                    </ul>
+
+                    <b>Special Theme: AI Agents-in-the-Loop.</b> We invite papers engaging with this year's theme, including:
+                    <ul>
+                        <li class="pv1">Task allocation and workflow integration between human evaluators and AI agents</li>
+                        <li class="pv1">Impact of hybrid human-AI approaches on vulnerability discovery</li>
+                        <li class="pv1">Meta-evaluation frameworks for assessing trustworthiness of AI agents as auditing tools</li>
+                        <li class="pv1">Methodologies for evaluating complex agent behaviors (multi-step reasoning, tool use, emergent patterns)</li>
+                        <li class="pv1">Design patterns and safeguards for maintaining human oversight in automated evaluation</li>
+                        <li class="pv1">Empirical studies of agent-assisted evaluation in practice</li>
+                    </ul>
+                </p>
+                <p class="f5 lh-copy mt0-ns">
+                    <p class="pv1"><a style="font-weight: 700;">Submission Format:</a> 2-6 pages ACM double-column, excluding references.</p>
+                    <p class="pv1"><a style="font-weight: 700;">Submission Types:</a> Position papers, full or in-progress empirical studies, literature reviews, system demos, method descriptions, or encore of published work (non-archival).</p>
+                    <p class="pv1"><a style="font-weight: 700;">Review Process:</a> Double-blind (except encore submissions). Papers will be selected based on the quality of the submission and diversity of perspectives to allow for a meaningful exchange of knowledge between a broad range of stakeholders.</p>
+                    <p><a style="font-weight: 700;">Templates: </a> <a class="accent-txt" href="https://www.acm.org/binaries/content/assets/publications/word_style/interim-template-style/interim-layout.docx">[Word]</a> <a class="accent-txt" href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip">[LaTeX]</a> <a class="accent-txt" href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-primary-article-template/wbvnghjbzwpc">[Overleaf]</a></p>
+                    <p><a style="font-weight: 700;">Notes: </a>                    <ul>
+                        <li class="pv1">We encourage authors who submit also to help with the review process.</li>
+                        <li class="pv1">For an encore submission, you do not need to anonymize the submission. Encore submissions will go through a jury review process. </li>
+                        <li class="pv1">Please use \documentclass[sigconf,anonymous]{acmart} for submission. </li>
+                        <li class="pv1">Please be aware of OpenReview's moderation policy for newly created profiles: new profiles created without an institutional email will go through a moderation process that can take up to two weeks, while new profiles created with an institutional email will be activated automatically. </li>
+                    </ul></p>
+                </p>
+                <p>
+                    <a class="f6 link grow br3 ba bw1 ph3 pv2 mb2 dib accent-txt" href="" target="_blank">→ Submission Site (Coming Soon)</a>
+                </p>
+            </div>
+        </article>
+
+        <article class="cf ph3 ph5-ns pv5" id="organizers">
+            <header class="fn fl-ns w-30-ns pr4-ns">
+                <h1 class="f3 lh-title fw5 mb3 mt0 pt3 bt bw2 accent-txt">
+                    Organizers
+                </h1>
+            </header>
+            <div class="fn fl-ns w-70-ns">
+                <section class="cf w-200 pa2-ns">
+                    <div class="cf w-100 measure-wide">
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/willem.jpg" class="db bg-center cover aspect-ratio--object br-100" style="object-fit: cover;">
+                            </div>
+                            <a href="https://willemvandermaden.com" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Willem van der Maden</p>
+                                <p class="f6 fw4 mt2 black-60">IT University of Copenhagen</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/deng.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://www.wesleydeng.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Wesley Hanwen Deng</p>
+                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/yulu.png" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://yululiu.github.io/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Yu Lu Liu</p>
+                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cf w-100 measure-wide">
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/placeholder.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="#" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Han Jiang</p>
+                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/placeholder.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="#" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Valerie Chen</p>
+                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/placeholder.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="#" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Haotian Li</p>
+                                <p class="f6 fw4 mt2 black-60">Microsoft Research Asia</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cf w-100 measure-wide">
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/kim.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://juhokim.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Juho Kim</p>
+                                <p class="f6 fw4 mt2 black-60">KAIST</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/liao.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="http://qveraliao.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Q. Vera Liao</p>
+                                <p class="f6 fw4 mt2 black-60">University of Michigan, Ann Arbor</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/wei.png" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://cocoxu.github.io/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Wei Xu</p>
+                                <p class="f6 fw4 mt2 black-60">Georgia Institute of Technology</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cf w-100 measure-wide">
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/eslami.jpg" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://www.motahhare.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Motahhare Eslami</p>
+                                <p class="f6 fw4 mt2 black-60">Carnegie Mellon University</p>
+                            </a>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="aspect-ratio aspect-ratio--1x1">
+                                <img src="./assets/xiao.png" class="db bg-center cover aspect-ratio--object br-100">
+                            </div>
+                            <a href="https://ziangxiao.com/" class="ph2 ph0-ns pb3 link db" target="_blank">
+                                <p class="f5-ns mb0 fw6 black-90">Ziang Xiao</p>
+                                <p class="f6 fw4 mt2 black-60">Johns Hopkins University</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+
+
+    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+        <small class="f6 db tc">HEAL@CHI'26</small>
+    </footer>
+
+
+</body>
+
+</html>
